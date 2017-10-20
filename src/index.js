@@ -28,7 +28,7 @@ function emitter(eventName, emitterProp) {
       }
     }
 
-    Emitter.contextTypes = contextTypes = {
+    Emitter.contextTypes = {
       [makeBusKey(eventName)]: PropTypes.any,
     };
 
@@ -61,7 +61,7 @@ function receiver(eventName, handle) {
       }
     }
 
-    Receiver.contextTypes = contextTypes = {
+    Receiver.contextTypes = {
       [makeBusKey(eventName)]: PropTypes.any,
     };
 
