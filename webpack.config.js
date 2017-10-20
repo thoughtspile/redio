@@ -1,10 +1,9 @@
-var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
     entry: { index: './src/index.js' },
     output: {
-      path: path.join(__dirname, 'build'),
+      path: __dirname,
       filename: "[name].js",
       library: "rescribe",
       libraryTarget: 'umd',
