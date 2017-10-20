@@ -1,0 +1,25 @@
+{
+  "name": "redio",
+  "version": "0.0.0",
+  "description": "React event bus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtspile/redio.git"
+  },
+  "keywords": [
+    "frontend",
+    "react",
+    "events",
+    "pubsub"
+  ],
+  "author": "Vladimir Klepov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thoughtspile/redio/issues"
+  },
+  "homepage": "https://github.com/thoughtspile/redio#readme"
+}
