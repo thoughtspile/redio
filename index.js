@@ -145,7 +145,7 @@ function emitter(eventName, emitterProp) {
       return Emitter;
     }(_react.Component);
 
-    Emitter.contextTypes = contextTypes = _defineProperty({}, makeBusKey(eventName), _propTypes2.default.any);
+    Emitter.contextTypes = _defineProperty({}, makeBusKey(eventName), _propTypes2.default.any);
 
     return Emitter;
   };
@@ -191,7 +191,7 @@ function receiver(eventName, handle) {
       return Receiver;
     }(_react.Component);
 
-    Receiver.contextTypes = contextTypes = _defineProperty({}, makeBusKey(eventName), _propTypes2.default.any);
+    Receiver.contextTypes = _defineProperty({}, makeBusKey(eventName), _propTypes2.default.any);
 
     return Receiver;
   };

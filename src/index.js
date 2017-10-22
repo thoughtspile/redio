@@ -22,15 +22,14 @@ function emitter(eventName, emitterProp) {
       }
 
       render() {
-        const props = Object.assign({}, this.props);
-        props[emitterProp] = this.emit;
+        const propsWithEmit = Object.assign({}, this.props);
+        propsWithEmit[emitterProp] = this.emit;
         return createElement(PlainComponent, propsWithEmit);
       }
     }
 
-    Emitter.contextTypes = {
-      [makeBusKey(eventName)]: PropTypes.any,
-    };
+    Emitter.contextTypes = { [makeBusKey(eventName)]: PropTypes.any };
+    Emitter.childContextTypes = { [makeBusKey(eventName)]: PropTypes.any };
 
     return Emitter;
   };
@@ -61,9 +60,7 @@ function receiver(eventName, handle) {
       }
     }
 
-    Receiver.contextTypes = {
-      [makeBusKey(eventName)]: PropTypes.any,
-    };
+    Receiver.contextTypes = { [makeBusKey(eventName)]: PropTypes.any };
 
     return Receiver;
   };
